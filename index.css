@@ -14,3 +14,84 @@ body {
 	margin-top: 20px;
 }
 
+.movies-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.movie {
+	align-items: center;
+}
+
+#watchlistBtn {
+	background-color: red;
+}
+
+.movie-poster {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.display-2 {
+	font-family: 'Londrina Solid', cursive;
+	animation: text-flicker 3s linear infinite;
+}
+
+@keyframes text-flicker {
+	0% {
+		opacity: 0.1;
+		text-shadow: 0px 0px 29px #06FDD0;
+	}
+	2% {
+		opacity: 1;
+		text-shadow: 0px 0px 29px #06FDD0;
+	}
+	8% {
+		opacity: 0.1;
+		text-shadow: 0px 0px 29px #06FDD0;
+	}
+	9% {
+		opacity: 1;
+		text-shadow: 0px 0px 29px #06FDD0;
+	}
+	12% {
+		opacity: 0.1;
+		text-shadow: 0px 0px #06FDD0;
+	}
+	20% {
+		opacity: 1;
+		text-shadow: 0px 0px 29px #06FDD0;
+	}
+	25% {
+		opacity: 0.3;
+		text-shadow: 0px 0px 29px #06FDD0;
+	}
+	30% {
+		opacity: 1;
+		text-shadow: 0px 0px 29px #06FDD0;
+	}
+	70% {
+		opacity: 0.7;
+		text-shadow: 0px 0px 29px #06FDD0;
+	}
+	72% {
+		opacity: 0.2;
+		text-shadow:0px 0px 29px #06FDD0;
+	}
+	77% {
+		opacity: .9;
+		text-shadow: 0px 0px 29px #06FDD0;
+	}
+	100% {
+		opacity: .9;
+		text-shadow: 0px 0px 29px #06FDD0;
+	}
+	}
+	
+
+
+
+
+
