@@ -19,7 +19,7 @@ function renderMovies(movieArray) {
         <img class="movie-poster" src="${currentMovie.Poster}" alt="" width="100">
         <p class="movie-title">${currentMovie.Title}</p>
         <p class="movie-release-date">${currentMovie.Year}</p>
-        <button id="addBtn">Add</button>
+        <button id="addBtn" onclick="saveToWatchList('${currentMovie.imdbID}')">Add</button>
         </div>`
     });
     return movieHtmlArray.join('');
@@ -44,16 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 })
 
-let watchlistJSON = localStorage.getItem('watchlist');
-let watchlist = JSON.parse(watchlistJSON);
-if (watchlist === null) {
-    watchlist = [];
-}
-document.querySelector('.movies-container').innerHTML = renderMovies(watchlist);
-
 const watchlistButton = document.getElementById('watchlistBtn');
 watchlistButton.addEventListener('click', function() {
-    document.location='./watchlist.html';
+    window.location='./watchlist.html';
 })
 
 // function renderMovies(movieArray) {
